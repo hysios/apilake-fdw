@@ -1,5 +1,5 @@
 [package]
-name = "wasm_fdw_example"
+name = "apilake-fdw"
 version = "0.1.0"
 edition = "2021"
 
@@ -15,10 +15,11 @@ wit-bindgen-rt = "0.26.0"
 serde_json = "1.0"
 
 [package.metadata.component]
-package = "my-company:example-fdw"
+package = "blksails:apilakefdw"
 
 [package.metadata.component.target]
 path = "wit"
 
 [package.metadata.component.target.dependencies]
 "supabase:wrappers" = { path = "./supabase-wrappers-wit" }
+
